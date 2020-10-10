@@ -1,0 +1,8 @@
+﻿<div class="btn-group-vertical btn-group-lg">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <a class="nav-link text-dark" asp-area="" asp-controller="Panel" asp-action="Inbox">Inbox</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Panel" asp-action="Clients">Clients</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Panel" asp-action="Options">Options</a>
+    }
+</div>
